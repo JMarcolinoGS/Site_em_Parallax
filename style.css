@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.box{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main{
+    display: block;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,h2,h3,h4{
+    font-weight: 900;
+    color: cornflowerblue;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background:#4b76de ;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:cover; /*para funcionar em outros navegadores */
+    -moz-background-size:cover; /*mozila firefox*/
+}
+
+section.module.parallax-1{
+    background-image: url("imagens/outro.jpg");
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -webkit-linear-gradient(to bottom rgba(0,0,0) 0, rgba(0,0,0) 40%, #000 100%);;
+    background: -moz-linear-gradient(to bottom rgba(0,0,0) 0, rgba(0,0,0) 40%, #000 100%);;
+    background: linear-gradient(to bottom rgba(0,0,0) 0, rgba(0,0,0) 40%, #000 100%); /*esses 40% é de opacidade*/
+}
+section.module.parallax-2{
+    background-image: url("imagens/montanha_2.jpg");
+}
+
+section.module.parallax-3{
+    background-image: url("imagens/montanha_3.jpeg");
+}
+
+section.module.parallax h2{
+    color: white;
+    text-align: center;
+    font-size: 77px;
+    z-index: 50;
+    text-transform:uppercase;
+}
+
